@@ -31,7 +31,6 @@ def saveData():
 
         kv = KvData(key_id=k, value=v)
         res = kv.put()
-        print '=' *10 + res.__str__()
         return 'save' + k + v
     except:
         traceback.print_exc()
